@@ -4,6 +4,7 @@ version: 2.1
 
 orbs:
   kelvin: kelvinkfli/demo@1.0.0
+  aws-eks: sonhmle-space/eks-build-deploy@0.0.1
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -11,3 +12,4 @@ workflows:
   main:
     jobs:
       - kelvin/lint-and-test
+      - aws-eks/create-deployment
