@@ -11,4 +11,4 @@ workflows:
   main:
     jobs:
         - test-first-orb/hello:
-            channel: $SLACK_DEFAULT_CHANNEL 
+            channel: SLACK_DEFAULT_CHANNEL 
