@@ -10,4 +10,6 @@ orbs:
 workflows:
   main:
     jobs:
-        - test-first-orb/hello
+        - test-first-orb/hello:
+            channel: 'abc'
+
