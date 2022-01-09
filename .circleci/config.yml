@@ -10,5 +10,4 @@ orbs:
 workflows:
   main:
     jobs:
-        - test-first-orb/hello:
-            channel: SLACK_DEFAULT_CHANNEL 
+        - test-first-orb/hello
