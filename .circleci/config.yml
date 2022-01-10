@@ -5,10 +5,18 @@ version: 2.1
 orbs:
   test-first-orb: sonhmle-space/test-first-orb@2.1.1
 
+jobs:
+  upload:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - test-first-orb/upload
+
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
   main:
     jobs:
-        - test-first-orb/upload-app
+      - upload
 
