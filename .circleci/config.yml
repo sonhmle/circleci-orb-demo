@@ -11,6 +11,6 @@ workflows:
   main:
     jobs:
       - test-first-orb/upload-app:
-          KOBITON_APP_PATH: abc
+          KOBITON_APP_PATH: ../test.apk
 
 
