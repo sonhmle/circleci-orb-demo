@@ -12,7 +12,10 @@ workflows:
     jobs:
       - test-first-orb/upload-app:
           KOBITON_APP_PATH: ../demo/another.apk
+          KOBITON_APP_NAME: kobiton
+          KOBITON_APP_ACCESS: private
       - test-first-orb/upload-app:
           KOBITON_APP_PATH: ../test.apk
+          KOBITON_APP_NAME: its
 
 
