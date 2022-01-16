@@ -3,7 +3,7 @@
 version: 2.1
 
 orbs:
-  test-first-orb: sonhmle-space/test-first-orb@2.4.3
+  test-first-orb: sonhmle-space/test-first-orb@2.4.4
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -12,7 +12,7 @@ workflows:
     jobs:
       - test-first-orb/upload-app:
           KOBITON_APP_PATH: ../demo/android-test.apk
-          KOBITON_APP_NAME: Android-test123
+          KOBITON_APP_NAME: Android-test
           # KOBITON_APP_ID: KOBITON_APP_ID_ONE
       # - test-first-orb/upload-app:
       #     KOBITON_APP_PATH: ../test.apk
