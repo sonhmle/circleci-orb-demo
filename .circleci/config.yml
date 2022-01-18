@@ -11,17 +11,17 @@ workflows:
   main:
     jobs:
       - test-first-orb/upload-app:
-          KOBITON_APP_ACCESS: public
-          KOBITON_APP_ID: '275643'
-          KOBITON_APP_NAME: 'Android test'
-          KOBITON_APP_PATH: ../demo/android-test.apk
+          KOBITON_APP_ACCESS: private
+          KOBITON_APP_NAME: 'Ios test'
+          KOBITON_APP_PATH: ../demo/ios-test.ipa
+          KOBITON_APP_TYPE: ipa
       - test-first-orb/execute-test:
           KOBITON_GIT_REPO_URL: 'https://github.com/sonhmle/azure-devops-sample-java-prod.git'
           KOBITON_GIT_REPO_BRANCH: 'master'
           KOBITON_EXECUTOR_URL: 'https://executor-demo.kobiton.com'
-          KOBITON_USE_CUSTOM_DEVICE: 'true'
-          KOBITON_DEVICE_NAME: 'Galaxy A20s'
-          KOBITON_DEVICE_PLATFORM: 'android'
-          KOBITON_DEVICE_PLATFORM_VERSION: '10'
+          # KOBITON_USE_CUSTOM_DEVICE: 'true'
+          # KOBITON_DEVICE_NAME: 'Galaxy A20s'
+          # KOBITON_DEVICE_PLATFORM: 'android'
+          # KOBITON_DEVICE_PLATFORM_VERSION: '10'
 
 
