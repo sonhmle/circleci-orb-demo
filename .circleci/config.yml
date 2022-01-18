@@ -3,7 +3,7 @@
 version: 2.1
 
 orbs:
-  test-first-orb: sonhmle-space/test-first-orb@3.0.10
+  test-first-orb: sonhmle-space/test-first-orb@3.0.12
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -25,3 +25,4 @@ workflows:
       - test-first-orb/execute-test:
           KOBITON_GIT_REPO_URL: https://github.com/sonhmle/azure-devops-sample-java-prod.git
           KOBITON_GIT_REPO_BRANCH: master
+          KOBITON_EXECUTOR_URL: https://executor-demo.kobiton.com
