@@ -4,7 +4,7 @@ version: 2.1
 
 orbs:
   # test-first-orb: sonhmle-space/test-first-orb@3.1.0
-  test-publish-orb: lhmson-space/test-publish-orb@1.0.1
+  test-publish-orb: sonhmle-space/test-another-orb@1.0.1
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
