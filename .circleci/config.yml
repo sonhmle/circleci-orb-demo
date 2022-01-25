@@ -4,19 +4,19 @@ version: 2.1
 
 orbs:
   # test-first-orb: sonhmle-space/test-first-orb@3.1.0
-  test-publish-orb: sonhmle-space/test-another-orb@1.0.1
+  test-first-orb: sonhmle-space/test-first-orb@3.1.0
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
   main:
     jobs:
-      - test-publish-orb/upload-app:
-          KOBITON_APP_ACCESS: private
-          KOBITON_APP_NAME: 'Ios test'
-          KOBITON_APP_PATH: ../demo/ios-test.ipa
-          KOBITON_APP_TYPE: ipa
-      - test-publish-orb/execute-test:
+      - test-first-orb/upload-app:
+          KOBITON_APP_ACCESS: public
+          KOBITON_APP_ID: '275643'
+          KOBITON_APP_NAME: Android test
+          KOBITON_APP_PATH: ../demo/android-test.apk
+      - test-first-orb/execute-test:
           KOBITON_GIT_REPO_URL: 'https://github.com/sonhmle/azure-devops-sample-java-prod.git'
           KOBITON_GIT_REPO_BRANCH: 'master'
           KOBITON_EXECUTOR_URL: 'https://executor-demo.kobiton.com'
