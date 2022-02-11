@@ -17,7 +17,7 @@ workflows:
           KOBITON_APP_PATH: ../demo/android-test.apk
       - kobiton-orb/execute-test:
           KOBITON_GIT_REPO_URL: 'https://github.com/sonhmle/azure-devops-sample-java-prod.git'
-          KOBITON_APP_ID: kobiton-store:91041
+          KOBITON_APP_ID: kobiton-store:275643
           KOBITON_GIT_REPO_BRANCH: 'master'
           KOBITON_EXECUTOR_URL: 'https://executor-demo.kobiton.com'
           KOBITON_USE_CUSTOM_DEVICE: 'true'
